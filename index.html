@@ -241,6 +241,16 @@
 	}
 </style>
 
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #00A3E0;
+		font-family: "Peugeot", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #00A3E0;
+	}
+</style>
+
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
@@ -266,10 +276,10 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://psa-customerfirst--strange.sandbox.my.salesforce.com',
-			'https://psa-customerfirst--strange.sandbox.my.site.com/peugeot',
+			'https://psa-customerfirst--devhyper.sandbox.my.salesforce.com',
+			'https://psa-customerfirst--devhyper.sandbox.my.site.com/peugeot',
 			gslbBaseURL,
-			'00DAP000004NhLJ',
+			'00DG5000002Xt4b',
 			'UK_Chat_Peugeot_BrandSite',
 			{
 				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-urlt2q.salesforceliveagent.com/content',
@@ -284,7 +294,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst--strange.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://psa-customerfirst--devhyper.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
