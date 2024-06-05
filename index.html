@@ -231,6 +231,16 @@
 	}
 </style>
 
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #00A3E0;
+		font-family: "Peugeot", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #00A3E0;
+	}
+</style>
+
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
@@ -256,17 +266,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://psa-customerfirst--preprod.sandbox.my.salesforce.com',
-			'https://psa-customerfirst--preprod.sandbox.my.site.com/peugeot',
+			'https://psa-customerfirst--strange.sandbox.my.salesforce.com',
+			'https://psa-customerfirst--strange.sandbox.my.site.com/peugeot',
 			gslbBaseURL,
-			'00D1x000000KYSu',
-			'UK_Chat_Peugeot',
+			'00DAP000004NhLJ',
+			'UK_Chat_Peugeot_BrandSite',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-urlt2q.salesforceliveagent.com/content',
 				deploymentId: '5721r0000004Fqg',
-				buttonId: '57369000000TZP7',
-				baseLiveAgentURL: 'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I5E00000000XFUAY_1743196f7f0',
+				buttonId: '57369000000PT69',
+				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-urlt2q.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I0E000000CbazUAC_183f4ff07cb',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -274,7 +284,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://psa-customerfirst--strange.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
